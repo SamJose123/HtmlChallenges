@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tables</title>
+
+    <style media="screen">
+      table {
+        border-collapse: collapse;
+        width: 20%
+      }
+      table, th, {
+        border: 1px solid Black;
+      }
+      td {
+      padding: 7px
+
+      }
+      .orange {
+        background-color: orangered
+      }
+      .yellow {
+        background-color: yellow
+      }
+    </style>
+  </head>
+  <body>
+
+    <br>
+
+    </table>
+
+    <br>
+
+    <!-- nested table 1 -->
+    <h1>TABLE 1</h1>
+
+    <table border="3">
+
+        <tr>
+          <td>1</td>
+          <td colspan="3" class="yellow">2</td>
+        </tr>
+
+        <tr>
+          <td rowspan="3">3</td>
+          <td class="orange">4</td>
+          <td class="orange">5</td>
+          <td rowspan="2" class="yellow">6</td>
+
+        </tr>
+
+        <tr>
+          <td class="orange">7</td>
+          <td class="orange">8</td>
+
+        </tr>
+
+        <tr>
+          <td colspan="2" class="yellow">9</td>
+          <td class="yellow">10</td>
+
+
+        </tr>
+
+    </table>
+
+
+    <table>
+
+    <br>
+    
+    <!-- nested table 2 -->
+    <h1>TABLE 2</h1>
+
+    <table border="3">
+
+        <tr>
+          <td>1</td>
+          <td colspan="3" class="yellow">2</td>
+        </tr>
+
+        <table border="2" >
+        <tr>
+          <td rowspan="3">3</td>
+        </tr>
+        </table>
+            <table border="2">
+              <tr>
+                <td class="orange">4</td>
+                <td class="orange">5</td>
+              </tr>
+              <tr>
+                <td class="orange">7</td>
+                <td class="orange">8</td>
+              </tr>
+            </table>    
+      <table border="2">
+        <tr>
+          <td rowspan="2" class="yellow">6</td>
+        </tr>
+      </table>
+      <table border="2">
+        <tr>
+          <td colspan="2" class="yellow">9</td>
+          <td class="yellow">10</td>
+        </tr>
+
+    </table>
+
+
+    <table>
+
+    
+  
+  </body>
+</html>
